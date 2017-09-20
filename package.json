@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test Carlos Mora Aguilar",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "node server.js",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
