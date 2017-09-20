@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var root_1 = require("../util/root");
+var root_1 = require('../util/root');
 /* tslint:disable:max-line-length */
 /**
  * @param PromiseCtor

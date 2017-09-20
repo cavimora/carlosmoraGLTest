@@ -1,15 +1,14 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var root_1 = require("./util/root");
-var toSubscriber_1 = require("./util/toSubscriber");
-var observable_1 = require("./symbol/observable");
+var root_1 = require('./util/root');
+var toSubscriber_1 = require('./util/toSubscriber');
+var observable_1 = require('./symbol/observable');
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
  *
  * @class Observable<T>
  */
-var Observable = /** @class */ (function () {
+var Observable = (function () {
     /**
      * @constructor
      * @param {Function} subscribe the function that is  called when the Observable is

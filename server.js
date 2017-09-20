@@ -7,6 +7,6 @@ var port = 8000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-server.listen(port, () => {
+server.listen(port, function() {
   console.log("Listening on port " + port);
 });

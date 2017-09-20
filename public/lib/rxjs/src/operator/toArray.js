@@ -1,16 +1,10 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var Subscriber_1 = require("../Subscriber");
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = require('../Subscriber');
 /**
  * @return {Observable<any[]>|WebSocketSubject<T>|Observable<T>}
  * @method toArray
@@ -20,7 +14,7 @@ function toArray() {
     return this.lift(new ToArrayOperator());
 }
 exports.toArray = toArray;
-var ToArrayOperator = /** @class */ (function () {
+var ToArrayOperator = (function () {
     function ToArrayOperator() {
     }
     ToArrayOperator.prototype.call = function (subscriber, source) {
@@ -33,12 +27,11 @@ var ToArrayOperator = /** @class */ (function () {
  * @ignore
  * @extends {Ignored}
  */
-var ToArraySubscriber = /** @class */ (function (_super) {
+var ToArraySubscriber = (function (_super) {
     __extends(ToArraySubscriber, _super);
     function ToArraySubscriber(destination) {
-        var _this = _super.call(this, destination) || this;
-        _this.array = [];
-        return _this;
+        _super.call(this, destination);
+        this.array = [];
     }
     ToArraySubscriber.prototype._next = function (x) {
         this.array.push(x);

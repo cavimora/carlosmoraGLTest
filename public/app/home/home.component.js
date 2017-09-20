@@ -8,9 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var HomeComponent = /** @class */ (function () {
+var core_1 = require('@angular/core');
+var HomeComponent = (function () {
     function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
@@ -21,7 +20,7 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.Over = function () {
         var _this = this;
-        console.log(this.total + ' - ' + this.current + ' - ' + this.needed);
+        //console.log(this.total + ' - ' + this.current + ' - ' + this.needed);
         document.getElementById('popover-m').style.display = 'block';
         var bar = document.getElementById("progress");
         var width = 1;
@@ -48,8 +47,8 @@ var HomeComponent = /** @class */ (function () {
             selector: 'home',
             styleUrls: ['home.styles.css'],
             templateUrl: 'home.template.html'
-        }),
-        __metadata("design:paramtypes", [])
+        }), 
+        __metadata('design:paramtypes', [])
     ], HomeComponent);
     return HomeComponent;
 }());

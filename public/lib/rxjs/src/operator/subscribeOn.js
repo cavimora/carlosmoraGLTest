@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var SubscribeOnObservable_1 = require("../observable/SubscribeOnObservable");
+var SubscribeOnObservable_1 = require('../observable/SubscribeOnObservable');
 /**
  * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
  *
@@ -17,7 +16,7 @@ function subscribeOn(scheduler, delay) {
     return this.lift(new SubscribeOnOperator(scheduler, delay));
 }
 exports.subscribeOn = subscribeOn;
-var SubscribeOnOperator = /** @class */ (function () {
+var SubscribeOnOperator = (function () {
     function SubscribeOnOperator(scheduler, delay) {
         this.scheduler = scheduler;
         this.delay = delay;

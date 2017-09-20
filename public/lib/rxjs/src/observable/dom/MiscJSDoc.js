@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @see {@link ajax}
  *
@@ -7,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @name AjaxRequest
  * @noimport true
  */
-var AjaxRequestDoc = /** @class */ (function () {
+var AjaxRequestDoc = (function () {
     function AjaxRequestDoc() {
         /**
          * @type {string}
