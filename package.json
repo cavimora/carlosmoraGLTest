@@ -14,8 +14,6 @@
   "author": "Carlos Mora Aguilar",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
     "@angular/core": "~2.4.0",
     "@angular/forms": "~2.4.0",
     "@angular/http": "~2.4.0",
