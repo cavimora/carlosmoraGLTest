@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   	}
 
   	Over() {
-  		console.log(this.total + ' - ' + this.current + ' - ' + this.needed);
+  		//console.log(this.total + ' - ' + this.current + ' - ' + this.needed);
   		document.getElementById('popover-m').style.display = 'block';
         let bar = document.getElementById("progress");
         let width = 1;
